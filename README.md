@@ -109,21 +109,19 @@
 - Terraform or Pulumi: Cloud setup (DB, cluster, secrets)
 
 ---
-
 ## 🗂 Folder Structure
 
 /360
-├── api/ # Go services (transaction, policy)
-├── fraud/ # Python model: XGBoost + SHAP
-├── gpt/ # GPT integration microservice
-├── policy/ # OPA engine and Rego rules
-├── dashboard/ # React admin dashboard
-├── chatbot/ # Dialogflow or GPT integration
-├── finance-assistant/ # Budget logic + GPT reports
-├── infra/ # Terraform, K8s configs, secrets
-├── monitoring/ # Prometheus, Grafana, Jaeger setup
+├── api/                 # Go services (transaction, policy)
+├── fraud/               # Python model: XGBoost + SHAP
+├── gpt/                 # GPT integration microservice
+├── policy/              # OPA engine and Rego rules
+├── dashboard/           # React admin dashboard
+├── chatbot/             # Dialogflow or GPT integration
+├── finance-assistant/   # Budget logic + GPT reports
+├── infra/               # Terraform, K8s configs, secrets
+├── monitoring/          # Prometheus, Grafana, Jaeger setup
 └── README.md
-
 
 
 ---
