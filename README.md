@@ -16,6 +16,22 @@
 - Provide a flagship project for candidates applying to big tech and fintech roles  
 
 ---
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Simulation--Ready-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Backed%20By-GPT--4-9cf?style=for-the-badge&logo=openai" />
+  <img src="https://img.shields.io/badge/Fraud%20Model-XGBoost-green?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/Explainer%20Model-SHAP-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Streaming-Kafka-red?style=for-the-badge&logo=apachekafka" />
+  <img src="https://img.shields.io/badge/API-Go-00ADD8?style=for-the-badge&logo=go" />
+  <img src="https://img.shields.io/badge/Policy%20Engine-OPA-4B8BBE?style=for-the-badge&logo=openpolicyagent" />
+  <img src="https://img.shields.io/badge/Audit-GPT--4-black?style=for-the-badge&logo=openai" />
+  <img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react" />
+  <img src="https://img.shields.io/badge/Infra-Kubernetes-326CE5?style=for-the-badge&logo=kubernetes" />
+  <img src="https://img.shields.io/badge/Secrets-Vault-yellow?style=for-the-badge&logo=hashicorp" />
+  <img src="https://img.shields.io/badge/Monitoring-Grafana-orange?style=for-the-badge&logo=grafana" />
+  <img src="https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions" />
+</p>
+
 
 ## Core Features
 
@@ -34,12 +50,7 @@
 ---
 
 ## How It Works – Full System Workflow
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Simulation--Ready-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Backed%20By-GPT--4-9cf?style=for-the-badge&logo=openai" />
-  <img src="https://img.shields.io/badge/Streaming-Kafka-red?style=for-the-badge&logo=apachekafka" />
-  <img src="https://img.shields.io/badge/Deployment-Kubernetes-326CE5?style=for-the-badge&logo=kubernetes" />
-</p>
+
 ### 1. Transaction Input
 - User enters dummy card info via frontend (card number, amount, receiver)
 - Frontend sends request to Go backend: `/api/transactions`
