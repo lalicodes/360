@@ -16,6 +16,72 @@
 
 ---
 
+## 🧩 Core Features
+
+| Category         | Feature                                                              |
+|------------------|----------------------------------------------------------------------|
+| Transactions     | Simulated card payments with double-entry ledger                     |
+| AI/ML            | Fraud detection using XGBoost + SHAP explanation                     |
+| GPT-4            | Summarized audit narratives, risk profiles, and red team test cases  |
+| Policy           | AML/KYC/compliance enforcement with OPA, OpenFGA and Rego            |
+| User Interaction | Smart banking chatbot with Dialogflow + GPT-4 fallback               |
+| Finance UX       | AI personal assistant for budgets, spending insights, savings goals  |
+| Security         | OAuth2, JWT, Vault, TLS, Keycloak for identity and encryption        |
+| Monitoring       | Prometheus, Grafana, Jaeger, OpenTelemetry, ELK for observability    |
+| DevOps           | Docker, Kubernetes, Terraform, Pulumi, GitHub Actions, ArgoCD        |
+
+---
+
+## 🔄 How It Works – Full System Workflow (with Examples)
+
+1. **Transaction Input**  
+   → User enters card info (`$6,500`, `Spain`, `3:14 AM`) → Sent to Go backend
+
+2. **Transaction Recording**  
+   → Debit and credit recorded (double-entry) → Published to `Kafka: transaction_topic`
+
+3. **Fraud Detection**  
+   → Python/XGBoost assigns score `0.92`  
+   → SHAP says: unusual time, foreign location, large amount  
+   → Flag stored + published to `fraud_flagged_topic`
+
+4. **OPA + OpenFGA Policy Checks**  
+   → Rego blocks Spain for unverified user  
+   → Violation saved in `policy_violations`
+
+5. **GPT-4 Audit Summary**  
+   → GPT says:  
+   > "Flagged for $6,500 at 3:14 AM in a never-before-used country."
+
+6. **Admin Dashboard**  
+   → Visuals show:  
+   - 🟠 Risk score: 87%  
+   - 📊 Geo heatmaps  
+   - 📥 Exportable audit logs
+
+7. **Finance Assistant (GPT)**  
+   → User: “How to cut spending?”  
+   → GPT: “Dining is 35% of budget. Set weekly target: $150.”
+
+8. **Banking Chatbot**  
+   → User: “Was my card used in Canada?”  
+   → Dialogflow or GPT checks + answers.
+
+9. **Security Flow**  
+   → API uses JWT  
+   → All secrets managed by Vault  
+   → TLS/mTLS for backend traffic
+
+10. **Monitoring Flow**  
+   → Prometheus logs `fraud_detected_total{high=37}`  
+   → Grafana detects spike  
+   → Jaeger traces request end-to-end
+
+11. **CI/CD**  
+   → GitHub Actions builds on push  
+   → ArgoCD auto-deploys to Kubernetes
+
+---
 <p align="center"><strong>🚀 Intelligence & Machine Learning</strong></p>
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Simulation--Ready-blue?style=for-the-badge" />
@@ -100,75 +166,6 @@
   <img src="https://img.shields.io/badge/Delivery-ArgoCD-1E6CFF?style=for-the-badge&logo=argo" />
 </p>
 
-
----
-
-## 🧩 Core Features
-
-| Category         | Feature                                                              |
-|------------------|----------------------------------------------------------------------|
-| Transactions     | Simulated card payments with double-entry ledger                     |
-| AI/ML            | Fraud detection using XGBoost + SHAP explanation                     |
-| GPT-4            | Summarized audit narratives, risk profiles, and red team test cases  |
-| Policy           | AML/KYC/compliance enforcement with OPA, OpenFGA and Rego            |
-| User Interaction | Smart banking chatbot with Dialogflow + GPT-4 fallback               |
-| Finance UX       | AI personal assistant for budgets, spending insights, savings goals  |
-| Security         | OAuth2, JWT, Vault, TLS, Keycloak for identity and encryption        |
-| Monitoring       | Prometheus, Grafana, Jaeger, OpenTelemetry, ELK for observability    |
-| DevOps           | Docker, Kubernetes, Terraform, Pulumi, GitHub Actions, ArgoCD        |
-
----
-
-## 🔄 How It Works – Full System Workflow (with Examples)
-
-1. **Transaction Input**  
-   → User enters card info (`$6,500`, `Spain`, `3:14 AM`) → Sent to Go backend
-
-2. **Transaction Recording**  
-   → Debit and credit recorded (double-entry) → Published to `Kafka: transaction_topic`
-
-3. **Fraud Detection**  
-   → Python/XGBoost assigns score `0.92`  
-   → SHAP says: unusual time, foreign location, large amount  
-   → Flag stored + published to `fraud_flagged_topic`
-
-4. **OPA + OpenFGA Policy Checks**  
-   → Rego blocks Spain for unverified user  
-   → Violation saved in `policy_violations`
-
-5. **GPT-4 Audit Summary**  
-   → GPT says:  
-   > "Flagged for $6,500 at 3:14 AM in a never-before-used country."
-
-6. **Admin Dashboard**  
-   → Visuals show:  
-   - 🟠 Risk score: 87%  
-   - 📊 Geo heatmaps  
-   - 📥 Exportable audit logs
-
-7. **Finance Assistant (GPT)**  
-   → User: “How to cut spending?”  
-   → GPT: “Dining is 35% of budget. Set weekly target: $150.”
-
-8. **Banking Chatbot**  
-   → User: “Was my card used in Canada?”  
-   → Dialogflow or GPT checks + answers.
-
-9. **Security Flow**  
-   → API uses JWT  
-   → All secrets managed by Vault  
-   → TLS/mTLS for backend traffic
-
-10. **Monitoring Flow**  
-   → Prometheus logs `fraud_detected_total{high=37}`  
-   → Grafana detects spike  
-   → Jaeger traces request end-to-end
-
-11. **CI/CD**  
-   → GitHub Actions builds on push  
-   → ArgoCD auto-deploys to Kubernetes
-
----
 
 ## 📁 Folder Structure
 
