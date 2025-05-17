@@ -1,4 +1,4 @@
-# 💼 360: Real-Time AI-Powered Fraud Detection & Financial Intelligence Platform
+# 💼 360: AI-Powered Fraud Detection & Financial Intelligence Platform
 
 360 is an enterprise-grade simulation of a modern banking system, the real-time architecture of FinTechs. It features full-stack transaction processing, real-time AI fraud detection, explainable audit reports via GPT-4, policy enforcement with Open Policy Agent, and a user-centric dashboard complete with an AI-driven chatbot and personal finance assistant.
 
