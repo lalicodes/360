@@ -17,19 +17,55 @@
 
 ---
 <p align="center">
+  <!-- Project Status & Intelligence -->
   <img src="https://img.shields.io/badge/Status-Simulation--Ready-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Backed%20By-GPT--4-9cf?style=for-the-badge&logo=openai" />
-  <img src="https://img.shields.io/badge/Fraud%20Model-XGBoost-green?style=for-the-badge&logo=python" />
-  <img src="https://img.shields.io/badge/Explainer%20Model-SHAP-blueviolet?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Streaming-Kafka-red?style=for-the-badge&logo=apachekafka" />
-  <img src="https://img.shields.io/badge/API-Go-00ADD8?style=for-the-badge&logo=go" />
+  <img src="https://img.shields.io/badge/Backed%20By-GPT--4-black?style=for-the-badge&logo=openai" />
+  <img src="https://img.shields.io/badge/Fraud%20Model-XGBoost-success?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/Explainability-SHAP-blueviolet?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Policy%20Engine-OPA-4B8BBE?style=for-the-badge&logo=openpolicyagent" />
-  <img src="https://img.shields.io/badge/Audit-GPT--4-black?style=for-the-badge&logo=openai" />
-  <img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react" />
-  <img src="https://img.shields.io/badge/Infra-Kubernetes-326CE5?style=for-the-badge&logo=kubernetes" />
+  <img src="https://img.shields.io/badge/Auth-OAuth2%20%2B%20JWT-yellow?style=for-the-badge" />
+
+  <!-- Backend -->
+  <img src="https://img.shields.io/badge/API-Go-00ADD8?style=for-the-badge&logo=go" />
+  <img src="https://img.shields.io/badge/gRPC-Protobuf-5C2D91?style=for-the-badge&logo=protobuf" />
+  <img src="https://img.shields.io/badge/FastAPI-Python-3776AB?style=for-the-badge&logo=fastapi" />
+  <img src="https://img.shields.io/badge/OpenAPI-Swagger-brightgreen?style=for-the-badge&logo=swagger" />
+
+  <!-- Databases -->
+  <img src="https://img.shields.io/badge/Database-PostgreSQL-blue?style=for-the-badge&logo=postgresql" />
+  <img src="https://img.shields.io/badge/Cache-Redis-red?style=for-the-badge&logo=redis" />
   <img src="https://img.shields.io/badge/Secrets-Vault-yellow?style=for-the-badge&logo=hashicorp" />
-  <img src="https://img.shields.io/badge/Monitoring-Grafana-orange?style=for-the-badge&logo=grafana" />
-  <img src="https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions" />
+  <img src="https://img.shields.io/badge/CDC-Debezium-critical?style=for-the-badge" />
+
+  <!-- Streaming & Messaging -->
+  <img src="https://img.shields.io/badge/Streaming-Kafka-red?style=for-the-badge&logo=apachekafka" />
+  <img src="https://img.shields.io/badge/Stream%20Processing-Flink-orange?style=for-the-badge&logo=apacheflink" />
+  <img src="https://img.shields.io/badge/Messaging-RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq" />
+
+  <!-- Frontend -->
+  <img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react" />
+  <img src="https://img.shields.io/badge/UI-Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwindcss" />
+  <img src="https://img.shields.io/badge/Charts-Chart.js-F5788D?style=for-the-badge&logo=chartdotjs" />
+  <img src="https://img.shields.io/badge/DataViz-D3.js-F9A03C?style=for-the-badge&logo=d3dotjs" />
+
+  <!-- Interaction -->
+  <img src="https://img.shields.io/badge/Chatbot-Dialogflow-orange?style=for-the-badge&logo=dialogflow" />
+  <img src="https://img.shields.io/badge/Fallback-GPT--4-black?style=for-the-badge&logo=openai" />
+
+  <!-- Monitoring & Observability -->
+  <img src="https://img.shields.io/badge/Metrics-Prometheus-orange?style=for-the-badge&logo=prometheus" />
+  <img src="https://img.shields.io/badge/Dashboard-Grafana-F46800?style=for-the-badge&logo=grafana" />
+  <img src="https://img.shields.io/badge/Tracing-Jaeger-FFCC00?style=for-the-badge&logo=jaeger" />
+  <img src="https://img.shields.io/badge/Logs-ELK%20Stack-005571?style=for-the-badge&logo=elasticsearch" />
+  <img src="https://img.shields.io/badge/Telemetry-OpenTelemetry-755EBE?style=for-the-badge&logo=opentelemetry" />
+
+  <!-- DevOps & Infra -->
+  <img src="https://img.shields.io/badge/Container-Docker-2496ED?style=for-the-badge&logo=docker" />
+  <img src="https://img.shields.io/badge/Orchestration-Kubernetes-326CE5?style=for-the-badge&logo=kubernetes" />
+  <img src="https://img.shields.io/badge/IaC-Terraform-purple?style=for-the-badge&logo=terraform" />
+  <img src="https://img.shields.io/badge/IaC-Pulumi-ED8B00?style=for-the-badge&logo=pulumi" />
+  <img src="https://img.shields.io/badge/CI/CD-GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions" />
+  <img src="https://img.shields.io/badge/Delivery-ArgoCD-1E6CFF?style=for-the-badge&logo=argo" />
 </p>
 
 
