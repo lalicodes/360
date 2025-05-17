@@ -1,18 +1,18 @@
-# 💼 360: AI-Powered Fraud Detection & Financial Intelligence Platform
+# 360: AI-Powered Fraud Detection & Financial Intelligence Platform
 
 360 is an enterprise-grade simulation of a modern banking system, the real-time architecture of FinTechs. It features full-stack transaction processing, real-time AI fraud detection, explainable audit reports via GPT-4, policy enforcement with Open Policy Agent, and a user-centric dashboard complete with an AI-driven chatbot and personal finance assistant.
 
 ---
 
-## 🎯 Project Objective
+## Project Objective
 
-- 🧠 Replicate real-world financial transaction systems with secure, intelligent components  
-- 🚀 Showcase enterprise tooling (Kafka, K8s, Prometheus, GPT, OPA) in a real use-case  
-- 🎓 Provide a flagship project for candidates applying to big tech and fintech roles  
+- Replicate real-world financial transaction systems with secure, intelligent components  
+- Showcase enterprise tooling (Kafka, K8s, Prometheus, GPT, OPA) in a real use-case  
+- Provide a flagship project for candidates applying to big tech and fintech roles  
 
 ---
 
-## 🌟 Core Features
+## Core Features
 
 | Category         | Feature                                                              |
 |------------------|----------------------------------------------------------------------|
@@ -28,32 +28,32 @@
 
 ---
 
-## 🧱 How It Works – Full System Workflow
+## How It Works – Full System Workflow
 
-### 🔁 1. Transaction Input
+### 1. Transaction Input
 - User enters dummy card info via frontend (card number, amount, receiver)
 - Frontend sends request to Go backend: `/api/transactions`
 
-### 🧾 2. Transaction Recording
+### 2. Transaction Recording
 - Backend maps card → user
 - Checks internal balance (PostgreSQL)
 - Records debit + credit entries (double-entry ledger)
 - Saves transaction row
 - Publishes event to Kafka: `transaction_topic`
 
-### 🔎 3. Fraud Detection + Scoring
+### 3. Fraud Detection + Scoring
 - Python service subscribes to `transaction_topic`
 - Predicts fraud score via XGBoost model
 - Generates SHAP explanation (e.g. unusual location, large amount, past behavior)
 - Flags txns with score > 0.85, saves to `fraud_flags`
 - Publishes event to `fraud_flagged_topic`
 
-### 📜 4. OPA Compliance Enforcement
+### 4. OPA Compliance Enforcement
 - Policy engine receives transaction payload
 - Applies Rego rules: geo-blocks, limits, KYC check
 - If violation: txn is rejected + saved in `policy_violations`
 
-### 🤖 5. GPT-4 Audit Generation
+### 5. GPT-4 Audit Generation
 - GPT receives SHAP + fraud context + policy info
 - Generates natural language explanation  
   _Example:_  
@@ -63,7 +63,7 @@
   - Risk profile summaries (per user)
   - Red-team adversarial test cases
 
-### 📊 6. Dashboard Visualization (Admin Panel)
+### 6. Dashboard Visualization (Admin Panel)
 - Frontend fetches:
   - Transaction history
   - Live fraud flags
@@ -75,7 +75,7 @@
   - Interactive visualizations (Chart.js, D3)
   - Exportable logs (PDF/CSV)
 
-### 🧠 7. AI Personal Finance Assistant
+### 7. AI Personal Finance Assistant
 - Tracks categories: food, travel, entertainment, savings
 - GPT-4 gives:
   - Budget tips
@@ -89,19 +89,19 @@
   - “How can I improve savings?”
 - If unsupported, fallback to GPT-4
 
-### 🔐 9. Security Layer
+### 9. Security Layer
 - JWT-authenticated API calls
 - Keycloak for SSO + admin roles
 - Vault manages secrets (OpenAI, DB, TLS keys)
 - TLS encryption across backend services
 
-### 📈 10. Observability Stack
+### 10. Observability Stack
 - Prometheus: collects metrics (txns/min, fraud rate, GPT latency)
 - Grafana: dashboards (fraud spike, top users, performance)
 - Jaeger: full trace of request from API → Fraud → GPT → DB
 - ELK (Kibana): search logs per user, txn ID, or fraud type
 
-### ☁️ 11. Infrastructure & CI/CD
+### 11. Infrastructure & CI/CD
 - Docker containers per service
 - Kubernetes orchestrates scaling, health, restarts
 - GitHub Actions auto-build and deploy branches
@@ -110,7 +110,7 @@
 
 ---
 
-## 🗂 Folder Structure
+## Folder Structure
 
 ```
 /360
@@ -129,7 +129,7 @@
 
 ---
 
-## 🧭 Execution Phases
+## Execution Phases
 
 1. **Local Setup**: Docker Compose for DB, Kafka, Go, GPT  
 2. **Transaction API + Ledger**  
@@ -146,7 +146,7 @@
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Lali Krishnan**  
 Email: [lalikrishnanhere@gmail.com](mailto:lalikrishnanhere@gmail.com)  
