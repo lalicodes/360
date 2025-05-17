@@ -109,8 +109,10 @@
 - Terraform or Pulumi: Cloud setup (DB, cluster, secrets)
 
 ---
+
 ## 🗂 Folder Structure
 
+```
 /360
 ├── api/                 # Go services (transaction, policy)
 ├── fraud/               # Python model: XGBoost + SHAP
@@ -122,6 +124,7 @@
 ├── infra/               # Terraform, K8s configs, secrets
 ├── monitoring/          # Prometheus, Grafana, Jaeger setup
 └── README.md
+```
 
 
 ---
