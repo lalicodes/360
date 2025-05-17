@@ -31,8 +31,7 @@
 | Monitoring       | Prometheus, Grafana, Jaeger, ELK for full observability              |
 | DevOps           | Docker, Kubernetes, Terraform, GitHub Actions, ArgoCD (optional)     |
 
-## Architecture Overview  
-<img src="https://raw.githubusercontent.com/Akshay090/readme-wave-divider/main/wave-divider.svg" width="100%" />
+<img src="https://github.com/saadeghi/heroicons-dev/blob/main/docs/assets/step-bar.svg?raw=true" width="100%" />
 
 ---
 
