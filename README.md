@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Inter&size=22&duration=2000&pause=1000&color=000000&center=true&vCenter=true&width=600&lines=360+Financial+Intelligence+System;AI-Powered+Fraud+Detection;Enterprise+Banking+Simulation" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Inter&size=22&duration=2000&pause=1000&color=0000FF&center=true&vCenter=true&width=600&lines=360+Financial+Intelligence+System;AI-Powered+Fraud+Detection;Enterprise+Banking+Simulation" alt="Typing SVG" />
 </p>
 
 # 360: AI-Powered Fraud Detection & Financial Intelligence Platform
