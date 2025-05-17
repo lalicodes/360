@@ -10,6 +10,7 @@
 
 ## Project Objective
 
+
 - Replicate real-world financial transaction systems with secure, intelligent components  
 - Showcase enterprise tooling (Kafka, K8s, Prometheus, GPT, OPA) in a real use-case  
 - Provide a flagship project for candidates applying to big tech and fintech roles  
@@ -29,6 +30,9 @@
 | Security         | OAuth2, JWT, Vault, TLS for end-to-end encryption and secrets        |
 | Monitoring       | Prometheus, Grafana, Jaeger, ELK for full observability              |
 | DevOps           | Docker, Kubernetes, Terraform, GitHub Actions, ArgoCD (optional)     |
+
+## Architecture Overview  
+<img src="https://raw.githubusercontent.com/Akshay090/readme-wave-divider/main/wave-divider.svg" width="100%" />
 
 ---
 
