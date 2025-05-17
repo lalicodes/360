@@ -8,7 +8,7 @@
 
 ---
 
-## 🎯 Project Objective
+## Project Objective
 
 - Replicate real-world financial transaction systems with secure, intelligent components  
 - Showcase enterprise tooling (Kafka, K8s, Prometheus, GPT, OPA) in a real use-case  
@@ -16,7 +16,7 @@
 
 ---
 
-## 🧩 Core Features
+## Core Features
 
 | Category         | Feature                                                              |
 |------------------|----------------------------------------------------------------------|
@@ -32,7 +32,7 @@
 
 ---
 
-## 🔄 How It Works – Full System Workflow (with Examples)
+## How It Works – Full System Workflow (with Examples)
 
 1. **Transaction Input**  
    → User enters card info (`$6,500`, `Spain`, `3:14 AM`) → Sent to Go backend
@@ -82,7 +82,7 @@
    → ArgoCD auto-deploys to Kubernetes
 
 ---
-<p align="center"><strong>🚀 Intelligence & Machine Learning</strong></p>
+<p align="center"><strong> Intelligence & Machine Learning</strong></p>
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Simulation--Ready-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Backed%20By-GPT--4-black?style=for-the-badge&logo=openai" />
@@ -95,7 +95,7 @@
 
 <br />
 
-<p align="center"><strong>🧠 Backend & APIs</strong></p>
+<p align="center"><strong> Backend & APIs</strong></p>
 <p align="center">
   <img src="https://img.shields.io/badge/API-Go-00ADD8?style=for-the-badge&logo=go" />
   <img src="https://img.shields.io/badge/gRPC-Protobuf-5C2D91?style=for-the-badge&logo=protobuf" />
@@ -107,7 +107,7 @@
 
 <br />
 
-<p align="center"><strong>🗄️ Databases & Secrets</strong></p>
+<p align="center"><strong> Databases & Secrets</strong></p>
 <p align="center">
   <img src="https://img.shields.io/badge/Database-PostgreSQL-blue?style=for-the-badge&logo=postgresql" />
   <img src="https://img.shields.io/badge/Cache-Redis-red?style=for-the-badge&logo=redis" />
@@ -117,7 +117,7 @@
 
 <br />
 
-<p align="center"><strong>📡 Streaming & Messaging</strong></p>
+<p align="center"><strong> Streaming & Messaging</strong></p>
 <p align="center">
   <img src="https://img.shields.io/badge/Streaming-Kafka-red?style=for-the-badge&logo=apachekafka" />
   <img src="https://img.shields.io/badge/Stream%20Processing-Flink-orange?style=for-the-badge&logo=apacheflink" />
@@ -126,7 +126,7 @@
 
 <br />
 
-<p align="center"><strong>🎨 Frontend & Visualization</strong></p>
+<p align="center"><strong> Frontend & Visualization</strong></p>
 <p align="center">
   <img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react" />
   <img src="https://img.shields.io/badge/UI-Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwindcss" />
@@ -136,7 +136,7 @@
 
 <br />
 
-<p align="center"><strong>💬 User Interaction</strong></p>
+<p align="center"><strong> User Interaction</strong></p>
 <p align="center">
   <img src="https://img.shields.io/badge/Chatbot-Dialogflow-orange?style=for-the-badge&logo=dialogflow" />
   <img src="https://img.shields.io/badge/Fallback-GPT--4-black?style=for-the-badge&logo=openai" />
@@ -144,7 +144,7 @@
 
 <br />
 
-<p align="center"><strong>📈 Monitoring & Observability</strong></p>
+<p align="center"><strong> Monitoring & Observability</strong></p>
 <p align="center">
   <img src="https://img.shields.io/badge/Metrics-Prometheus-orange?style=for-the-badge&logo=prometheus" />
   <img src="https://img.shields.io/badge/Dashboard-Grafana-F46800?style=for-the-badge&logo=grafana" />
@@ -155,7 +155,7 @@
 
 <br />
 
-<p align="center"><strong>⚙️ DevOps & Infrastructure</strong></p>
+<p align="center"><strong> DevOps & Infrastructure</strong></p>
 <p align="center">
   <img src="https://img.shields.io/badge/Auth-Keycloak-purple?style=for-the-badge&logo=keycloak" />
   <img src="https://img.shields.io/badge/Container-Docker-2496ED?style=for-the-badge&logo=docker" />
