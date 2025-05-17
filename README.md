@@ -31,12 +31,15 @@
 | Monitoring       | Prometheus, Grafana, Jaeger, ELK for full observability              |
 | DevOps           | Docker, Kubernetes, Terraform, GitHub Actions, ArgoCD (optional)     |
 
-<img src="https://github.com/saadeghi/heroicons-dev/blob/main/docs/assets/step-bar.svg?raw=true" width="100%" />
-
 ---
 
 ## How It Works – Full System Workflow
-
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Simulation--Ready-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Backed%20By-GPT--4-9cf?style=for-the-badge&logo=openai" />
+  <img src="https://img.shields.io/badge/Streaming-Kafka-red?style=for-the-badge&logo=apachekafka" />
+  <img src="https://img.shields.io/badge/Deployment-Kubernetes-326CE5?style=for-the-badge&logo=kubernetes" />
+</p>
 ### 1. Transaction Input
 - User enters dummy card info via frontend (card number, amount, receiver)
 - Frontend sends request to Go backend: `/api/transactions`
