@@ -200,10 +200,9 @@
 
 ---
 
-## 👤 Author
+## Author
 
 **Lali Krishnan**  
-📧 [lalikrishnanhere@gmail.com](mailto:lalikrishnanhere@gmail.com)  
 🔗 [github.com/lalicodes](https://github.com/lalicodes)
 
 ---
