@@ -170,7 +170,6 @@
 ## Author
 
 **Lali Krishnan**  
-Email: [lalikrishnanhere@gmail.com](mailto:lalikrishnanhere@gmail.com)  
 GitHub: [github.com/lalicodes](https://github.com/lalicodes)
 
 ---
