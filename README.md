@@ -214,7 +214,7 @@
   <img src="https://img.shields.io/badge/Event%20Bus-RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq" />
   <img src="https://img.shields.io/badge/Messaging-Kafka%20Topics-red?style=for-the-badge&logo=apachekafka" />
   <img src="https://img.shields.io/badge/NLP-Dialogflow-orange?style=for-the-badge&logo=dialogflow" />
-  <img src="https://img.shields.io/badge/GPT%2D4-Fallback-black?style=for-the-badge&logo=openai" />
+ <img src="https://img.shields.io/badge/LLM-GPT--4_Fallback-black?style=for-the-badge&logo=chatgpt" />
   <img src="https://img.shields.io/badge/Memory-LangChain%20+%20Pinecone-04d9ff?style=for-the-badge&logo=langchain" />
 </p>
 
