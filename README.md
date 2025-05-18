@@ -216,7 +216,7 @@
   <img src="https://img.shields.io/badge/Memory-LangChain%20+%20Pinecone-04d9ff?style=for-the-badge&logo=langchain" />
 </p>
 
-<p align="center"><strong> Observability & Security</strong></p>
+<p align="center"><strong> Monitoring & Security</strong></p>
 <p align="center">
   <img src="https://img.shields.io/badge/Metrics-Prometheus-orange?style=for-the-badge&logo=prometheus" />
   <img src="https://img.shields.io/badge/Dashboard-Grafana-F46800?style=for-the-badge&logo=grafana" />
