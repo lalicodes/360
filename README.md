@@ -263,18 +263,41 @@
 
 ## Execution Phases
 
-1. **Local Setup**: Docker Compose (Apache Kafka, PostgreSQL, backend)  
-2. **Transaction Engine**: Ledger, FX, Kafka events  
-3. **Fraud Pipeline**: Kafka → Python → SHAP  
-4. **Streaming Rules**: Apache Kafka Streams + Flink logic  
-5. **Audit Generation**: GPT-4 fraud summaries + red teaming  
-6. **Policy Enforcement**: OPA + Rego + OpenFGA  
-7. **Vector Memory**: LangChain + Pinecone for semantic search  
-8. **Analytics**: Snowflake queries + dashboards  
-9. **Finance Assistant & Chatbot**: GPT-4 guidance  
-10. **Security**: OAuth2, Vault, TLS/mTLS, Keycloak, Istio  
-11. **Monitoring**: Prometheus, Grafana, ELK, Jaeger  
-12. **CI/CD**: GitHub Actions + ArgoCD deployment
+1. **Local Setup**  
+   Containerized environment using **Docker Compose** to spin up Kafka, PostgreSQL, and backend microservices for simulation.
+
+2. **Transaction Engine**  
+   Simulates card payments using a **double-entry ledger**, **FX conversion**, and streams all events to Kafka topics.
+
+3. **Fraud Pipeline**  
+   Consumes Kafka events via a **Python-based engine** with **XGBoost** scoring and **SHAP**-powered explainability.
+
+4. **Streaming Rules**  
+   Applies real-time fraud heuristics using **Kafka Streams** and **Apache Flink** for pattern detection and filtering.
+
+5. **Audit Generation**  
+   Uses **GPT-4** to convert flagged events into natural language summaries and **red team test cases** for compliance.
+
+6. **Policy Enforcement**  
+   Evaluates AML/KYC rules with **OPA (Rego)** and handles authorization with **OpenFGA** for granular access control.
+
+7. **Vector Memory Search**  
+   Embeds and indexes audit logs into **Pinecone**, enabling **semantic recall** using **LangChain**.
+
+8. **Analytics Layer**  
+   Pipes structured transactions into **Snowflake** for queryable warehousing, dashboard metrics, and trend visualization.
+
+9. **Finance Assistant & Chatbot**  
+   Combines **Dialogflow** for quick Q&A with **GPT-4 fallback** for deep analysis, budget advice, and user assistance.
+
+10. **Security Layer**  
+    Implements **OAuth2**, **Vault**, **TLS/mTLS**, and **Keycloak** with **Istio** service mesh for end-to-end secure architecture.
+
+11. **Monitoring & Observability**  
+    Tracks metrics, logs, and traces via **Prometheus**, **Grafana**, **Jaeger**, **OpenTelemetry**, and the **ELK Stack**.
+
+12. **CI/CD Pipeline**  
+    Uses **GitHub Actions** for build/test and **ArgoCD** for GitOps-based deployment to Kubernetes clusters.
 
 ---
 
