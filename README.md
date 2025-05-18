@@ -35,27 +35,130 @@
 
 ---
 
-## How It Works – System Workflow
+## ⚙️ How It Works – System Workflow
 
-1. **Transaction Input** → `$6,500` in `Spain`, `3:14 AM` sent to Go backend  
-2. **Double-entry Ledger** → Debit + Credit → Apache Kafka topic `transaction_topic`  
-3. **Fraud Detection** → XGBoost score `0.92` → SHAP explains anomaly  
-4. **Streaming Rules** → Apache Kafka Streams detect late-night high-value anomalies  
-5. **Policy Check** → OPA + Rego block transaction based on user trust level  
-6. **GPT-4 Audit** →  
-   > _"Flagged for $6,500 at 3:14 AM in a never-before-used country."_  
-7. **Vector DB Memory** → GPT summaries embedded in Pinecone for semantic retrieval  
-8. **Admin Dashboard** → Risk score: 87%, Geo heatmaps, exportable logs  
-9. **Finance Assistant & Chatbot** →  
-   - “Was my card used in Canada?” → GPT answers  
-   - “How to save?” → GPT: “Dining is 35% of budget. Target: $150/week.”  
-10. **Security Flow** →  
-    - Auth via **OAuth2 + JWT**  
-    - Secrets managed in **HashiCorp Vault**  
-    - **TLS/mTLS** across all backend traffic via **Istio**  
-    - Identity and access handled via **Keycloak + OpenFGA**  
-11. **Monitoring** → Prometheus/Grafana metrics, Jaeger tracing, ELK logs  
-12. **CI/CD** → GitHub Actions triggers ArgoCD auto-deploy to Kubernetes
+---
+
+### 1. 🧾 **Transaction Input**
+> User initiates a card payment of **$6,500**, location: **Spain**, time: **3:14 AM**
+
+- Data is sent to the **Go-based backend API**
+- Contains amount, timestamp, user metadata, and location
+- Simulates real-world payment requests in high-risk scenarios (e.g., late hours, foreign country)
+
+---
+
+### 2. 📚 **Double-entry Ledger**
+> Ensures all transactions are recorded with both debit and credit for financial integrity.
+
+- A ledger entry is created using **accounting principles** (e.g., debit user, credit merchant)
+- Event is **published to Apache Kafka** → Topic: `transaction_topic`
+- Enables **event-driven streaming** for downstream fraud analysis and policy checks
+
+---
+
+### 3. 🤖 **Fraud Detection**
+> Machine Learning kicks in with real-time risk scoring.
+
+- Message from Kafka is consumed by a **Python-based fraud engine**
+- **XGBoost model** returns a score (e.g., `0.92` → high risk)
+- **SHAP explainability** outputs the factors:
+  - ⏰ Unusual time
+  - 🌍 Foreign location
+  - 💸 Large amount
+
+---
+
+### 4. ⚡ **Streaming Rules (Kafka Streams)**
+> Detect fraud patterns on the fly, even before ML completes.
+
+- **Apache Kafka Streams** processes event data in real time
+- Inline logic flags:
+  - High-value transactions at night
+  - Unusual spending patterns
+- Enables **early-stage filtering and alerting**
+
+---
+
+### 5. 📜 **Policy Check (OPA + Rego + OpenFGA)**
+> Enforces compliance and access control.
+
+- **OPA + Rego** evaluates KYC, AML, and business rules
+- Example rule: Block unverified users spending abroad
+- **OpenFGA** ensures only authorized users can override, view, or intervene
+
+---
+
+### 6. 🧠 **GPT-4 Audit Summary**
+> Converts raw ML and rule outputs into human-readable explanations.
+
+```
+"Flagged for $6,500 at 3:14 AM in a never-before-used country."
+```
+
+- GPT-4 summarizes flagged events in natural language
+- Also supports **red team test simulations** for security audits
+
+---
+
+### 7. 🧠 **Vector Memory (Pinecone + LangChain)**
+> Enables search and recall of similar fraud cases via vector embeddings.
+
+- GPT audit outputs and metadata are **embedded and stored in Pinecone**
+- **LangChain** powers semantic retrieval and memory
+  - Example query: “Find transactions similar to the Spain one”
+- Supports fraud research, assistant queries, and recommendations
+
+---
+
+### 8. 📊 **Admin Dashboard**
+> Visual analytics for fraud risk, locations, and actions.
+
+- Built with **React + Tailwind CSS + D3.js**
+- Displays:
+  - 🟠 Risk score (e.g., 87%)
+  - 🗺️ Geo heatmaps for flagged regions
+  - 📄 Exportable logs, audit summaries, and risk explanations
+
+---
+
+### 9. 💬 **Finance Assistant & Chatbot**
+> GPT-powered interaction for users and admins.
+
+- **Dialogflow chatbot** for banking FAQs
+- **GPT-4 fallback** for deeper answers like:
+  - “Was my card used in Canada?” → GPT checks vector memory
+  - “How can I save money?” → GPT says: “Dining = 35% of budget. Set weekly target: $150.”
+
+---
+
+### 10. 🔐 **Security Flow**
+> End-to-end security for all services and users.
+
+- ✅ **OAuth2 + JWT** for authentication and session management  
+- ✅ **HashiCorp Vault** for managing all secrets securely  
+- ✅ **TLS/mTLS** across services using **Istio** service mesh  
+- ✅ **Keycloak + OpenFGA** for user roles, identity, and policy enforcement
+
+---
+
+### 11. 📈 **Monitoring & Observability**
+> Tracks metrics, traces, and logs across all microservices.
+
+- 📊 Metrics: **Prometheus + Grafana**
+- 📦 Logs: **ELK Stack** (Elasticsearch, Logstash, Kibana)
+- 🕵️ Tracing: **Jaeger**
+- 📡 Telemetry: **OpenTelemetry**
+
+---
+
+### 12. 🚀 **CI/CD Automation**
+> Continuous delivery from GitHub to Kubernetes.
+
+- 🛠️ **GitHub Actions** builds Docker containers on push  
+- 📦 **ArgoCD** automatically deploys to the Kubernetes cluster  
+- 🔁 Ensures zero-downtime and infrastructure as code deployment
+
 
 ---
 
