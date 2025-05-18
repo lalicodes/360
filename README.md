@@ -164,6 +164,8 @@
 
 ## 📦 Stack Highlights
 
+## 📦 Stack Highlights
+
 <p align="center"><strong> Intelligence & Machine Learning</strong></p>
 <p align="center">
   <img src="https://img.shields.io/badge/Backed%20By-GPT--4-black?style=for-the-badge&logo=openai" />
@@ -192,6 +194,8 @@
   <img src="https://img.shields.io/badge/Warehouse-Snowflake-4BACC6?style=for-the-badge&logo=snowflake" />
   <img src="https://img.shields.io/badge/Streaming-Apache%20Kafka-red?style=for-the-badge&logo=apachekafka" />
   <img src="https://img.shields.io/badge/Kafka%20Streams-ksqlDB-yellow?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Kafka%20Connect-CDC%20Pipelines-FF9900?style=for-the-badge&logo=apachekafka" />
+  <img src="https://img.shields.io/badge/Debezium-Real--time%20DB%20Change%20Capture-darkred?style=for-the-badge&logo=debezium" />
   <img src="https://img.shields.io/badge/Stream%20Processing-Flink-orange?style=for-the-badge&logo=apacheflink" />
   <img src="https://img.shields.io/badge/Messaging-RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq" />
   <img src="https://img.shields.io/badge/Secrets-Vault-yellow?style=for-the-badge&logo=hashicorp" />
@@ -203,7 +207,15 @@
   <img src="https://img.shields.io/badge/UI-Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwindcss" />
   <img src="https://img.shields.io/badge/Charts-Chart.js-F5788D?style=for-the-badge&logo=chartdotjs" />
   <img src="https://img.shields.io/badge/DataViz-D3.js-F9A03C?style=for-the-badge&logo=d3dotjs" />
-  <img src="https://img.shields.io/badge/Chatbot-Dialogflow-orange?style=for-the-badge&logo=dialogflow" />
+</p>
+
+<p align="center"><strong> Messaging & AI Chatbot</strong></p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Event%20Bus-RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq" />
+  <img src="https://img.shields.io/badge/Messaging-Kafka%20Topics-red?style=for-the-badge&logo=apachekafka" />
+  <img src="https://img.shields.io/badge/NLP-Dialogflow-orange?style=for-the-badge&logo=dialogflow" />
+  <img src="https://img.shields.io/badge/GPT%2D4-Fallback-black?style=for-the-badge&logo=openai" />
+  <img src="https://img.shields.io/badge/Memory-LangChain%20+%20Pinecone-04d9ff?style=for-the-badge&logo=langchain" />
 </p>
 
 <p align="center"><strong> Observability & Security</strong></p>
@@ -226,6 +238,7 @@
   <img src="https://img.shields.io/badge/CI/CD-GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions" />
   <img src="https://img.shields.io/badge/Delivery-ArgoCD-1E6CFF?style=for-the-badge&logo=argo" />
 </p>
+
 
 ---
 
