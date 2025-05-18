@@ -213,4 +213,4 @@ MIT License. This is an educational simulation project. All data is fake and use
 
 ---
 
-> 360 is more than a demo — it’s a full simulation of enterprise banking intelligence. Built to impress fintech, big tech, and security-focused platforms alike.
+> 360 is more than a demo — it’s a full simulation of enterprise banking intelligence.
