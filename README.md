@@ -39,7 +39,7 @@
 
 ---
 
-### 1. 🧾 **Transaction Input**
+### 1. **Transaction Input**
 > User initiates a card payment of **$6,500**, location: **Spain**, time: **3:14 AM**
 
 - Data is sent to the **Go-based backend API**
@@ -48,7 +48,7 @@
 
 ---
 
-### 2. 📚 **Double-entry Ledger**
+### 2. **Double-entry Ledger**
 > Ensures all transactions are recorded with both debit and credit for financial integrity.
 
 - A ledger entry is created using **accounting principles** (e.g., debit user, credit merchant)
@@ -57,7 +57,7 @@
 
 ---
 
-### 3. 🤖 **Fraud Detection**
+### 3. **Fraud Detection**
 > Machine Learning kicks in with real-time risk scoring.
 
 - Message from Kafka is consumed by a **Python-based fraud engine**
@@ -69,7 +69,7 @@
 
 ---
 
-### 4. ⚡ **Streaming Rules (Kafka Streams)**
+### 4. **Streaming Rules (Kafka Streams)**
 > Detect fraud patterns on the fly, even before ML completes.
 
 - **Apache Kafka Streams** processes event data in real time
@@ -80,7 +80,7 @@
 
 ---
 
-### 5. 📜 **Policy Check (OPA + Rego + OpenFGA)**
+### 5. **Policy Check (OPA + Rego + OpenFGA)**
 > Enforces compliance and access control.
 
 - **OPA + Rego** evaluates KYC, AML, and business rules
@@ -89,7 +89,7 @@
 
 ---
 
-### 6. 🧠 **GPT-4 Audit Summary**
+### 6. **GPT-4 Audit Summary**
 > Converts raw ML and rule outputs into human-readable explanations.
 
 ```
@@ -101,7 +101,7 @@
 
 ---
 
-### 7. 🧠 **Vector Memory (Pinecone + LangChain)**
+### 7. **Vector Memory (Pinecone + LangChain)**
 > Enables search and recall of similar fraud cases via vector embeddings.
 
 - GPT audit outputs and metadata are **embedded and stored in Pinecone**
@@ -111,7 +111,7 @@
 
 ---
 
-### 8. 📊 **Admin Dashboard**
+### 8. **Admin Dashboard**
 > Visual analytics for fraud risk, locations, and actions.
 
 - Built with **React + Tailwind CSS + D3.js**
@@ -132,7 +132,7 @@
 
 ---
 
-### 10. 🔐 **Security Flow**
+### 10. **Security Flow**
 > End-to-end security for all services and users.
 
 - ✅ **OAuth2 + JWT** for authentication and session management  
@@ -142,7 +142,7 @@
 
 ---
 
-### 11. 📈 **Monitoring & Observability**
+### 11. **Monitoring & Observability**
 > Tracks metrics, traces, and logs across all microservices.
 
 - 📊 Metrics: **Prometheus + Grafana**
@@ -152,7 +152,7 @@
 
 ---
 
-### 12. 🚀 **CI/CD Automation**
+### 12. **CI/CD Automation**
 > Continuous delivery from GitHub to Kubernetes.
 
 - 🛠️ **GitHub Actions** builds Docker containers on push  
@@ -161,8 +161,6 @@
 
 
 ---
-
-## 📦 Stack Highlights
 
 ## 📦 Stack Highlights
 
@@ -263,7 +261,7 @@
 
 ---
 
-## ⚙️ Execution Phases
+## Execution Phases
 
 1. **Local Setup**: Docker Compose (Apache Kafka, PostgreSQL, backend)  
 2. **Transaction Engine**: Ledger, FX, Kafka events  
