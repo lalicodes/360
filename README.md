@@ -135,10 +135,10 @@
 ### 10. **Security Flow**
 > End-to-end security for all services and users.
 
-- ✅ **OAuth2 + JWT** for authentication and session management  
-- ✅ **HashiCorp Vault** for managing all secrets securely  
-- ✅ **TLS/mTLS** across services using **Istio** service mesh  
-- ✅ **Keycloak + OpenFGA** for user roles, identity, and policy enforcement
+-  **OAuth2 + JWT** for authentication and session management  
+-  **HashiCorp Vault** for managing all secrets securely  
+-  **TLS/mTLS** across services using **Istio** service mesh  
+-  **Keycloak + OpenFGA** for user roles, identity, and policy enforcement
 
 ---
 
@@ -155,9 +155,9 @@
 ### 12. **CI/CD Automation**
 > Continuous delivery from GitHub to Kubernetes.
 
-- 🛠️ **GitHub Actions** builds Docker containers on push  
-- 📦 **ArgoCD** automatically deploys to the Kubernetes cluster  
-- 🔁 Ensures zero-downtime and infrastructure as code deployment
+-  **GitHub Actions** builds Docker containers on push  
+-  **ArgoCD** automatically deploys to the Kubernetes cluster  
+-  Ensures zero-downtime and infrastructure as code deployment
 
 
 ---
