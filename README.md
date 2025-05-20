@@ -193,9 +193,7 @@
   <img src="https://img.shields.io/badge/Streaming-Apache%20Kafka-red?style=for-the-badge&logo=apachekafka" />
   <img src="https://img.shields.io/badge/Kafka%20Streams-ksqlDB-yellow?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Kafka%20Connect-CDC%20Pipelines-FF9900?style=for-the-badge&logo=apachekafka" />
-  <img src="https://img.shields.io/badge/Debezium-Real--time%20DB%20Change%20Capture-darkred?style=for-the-badge&logo=debezium" />
-  <img src="https://img.shields.io/badge/Stream%20Processing-Flink-orange?style=for-the-badge&logo=apacheflink" />
-  <img src="https://img.shields.io/badge/Messaging-RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq" />
+  <img src="https://img.shields.io/badge/Debezium-Real--time%20DB%20Change%20Capture-darkred?style=for-the-badge&logo=debezium" /
   <img src="https://img.shields.io/badge/Secrets-Vault-yellow?style=for-the-badge&logo=hashicorp" />
 </p>
 
@@ -273,7 +271,7 @@
    Consumes Kafka events via a **Python-based engine** with **XGBoost** scoring and **SHAP**-powered explainability.
 
 4. **Streaming Rules**  
-   Applies real-time fraud heuristics using **Kafka Streams** and **Apache Flink** for pattern detection and filtering.
+   Applies real-time fraud heuristics using **Kafka Streams** for pattern detection and filtering.
 
 5. **Audit Generation**  
    Uses **GPT-4** to convert flagged events into natural language summaries and **red team test cases** for compliance.
