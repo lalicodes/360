@@ -219,7 +219,6 @@
   <img src="https://img.shields.io/badge/Dashboard-Grafana-F46800?style=for-the-badge&logo=grafana" />
   <img src="https://img.shields.io/badge/Tracing-Jaeger-FFCC00?style=for-the-badge&logo=jaeger" />
   <img src="https://img.shields.io/badge/Logs-ELK%20Stack-005571?style=for-the-badge&logo=elasticsearch" />
-  <img src="https://img.shields.io/badge/Telemetry-OpenTelemetry-755EBE?style=for-the-badge&logo=opentelemetry" />
   <img src="https://img.shields.io/badge/Service%20Mesh-Istio-blue?style=for-the-badge&logo=istio" />
   <img src="https://img.shields.io/badge/Auth-Keycloak-purple?style=for-the-badge&logo=keycloak" />
 </p>
