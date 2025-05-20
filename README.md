@@ -27,7 +27,7 @@
 | Vector DB        | Pinecone + LangChain for fraud memory and semantic search            |
 | User Interaction | Dialogflow chatbot + GPT fallback for smart Q&A                      |
 | Finance UX       | GPT-powered budgeting, savings assistant, and semantic tips          |
-| Streaming        | Apache Kafka Streams + Flink for inline fraud rules and stream intelligence |
+| Streaming        | Apache Kafka Streams for inline fraud rules and stream intelligence |
 | Analytics        | Snowflake for transaction warehousing and dashboard queries          |
 | Security         | OAuth2, JWT, TLS, Vault, Keycloak, mTLS via Istio                    |
 | Monitoring       | Prometheus, Grafana, Jaeger, ELK, OpenTelemetry                      |
@@ -207,7 +207,6 @@
 
 <p align="center"><strong> Messaging & AI Chatbot</strong></p>
 <p align="center">
-  <img src="https://img.shields.io/badge/Event%20Bus-RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq" />
   <img src="https://img.shields.io/badge/Messaging-Kafka%20Topics-red?style=for-the-badge&logo=apachekafka" />
   <img src="https://img.shields.io/badge/NLP-Dialogflow-orange?style=for-the-badge&logo=dialogflow" />
  <img src="https://img.shields.io/badge/LLM-GPT--4_Fallback-black?style=for-the-badge&logo=chatgpt" />
