@@ -30,8 +30,8 @@
 | Streaming        | Apache Kafka Streams for inline fraud rules and stream intelligence |
 | Analytics        | Snowflake for transaction warehousing and dashboard queries          |
 | Security         | OAuth2, JWT, TLS, Vault, Keycloak, mTLS via Istio                    |
-| Monitoring       | Prometheus, Grafana, Jaeger, ELK, OpenTelemetry                      |
-| DevOps           | Docker, Kubernetes, Terraform, Pulumi, GitHub Actions, ArgoCD        |
+| Monitoring       | Prometheus, Grafana, Jaeger, ELK                      |
+| DevOps           | Docker, Kubernetes, Terraform, GitHub Actions, ArgoCD        |
 
 ---
 
@@ -148,7 +148,6 @@
 - 📊 Metrics: **Prometheus + Grafana**
 - 📦 Logs: **ELK Stack** (Elasticsearch, Logstash, Kibana)
 - 🕵️ Tracing: **Jaeger**
-- 📡 Telemetry: **OpenTelemetry**
 
 ---
 
@@ -228,7 +227,6 @@
   <img src="https://img.shields.io/badge/Container-Docker-2496ED?style=for-the-badge&logo=docker" />
   <img src="https://img.shields.io/badge/Orchestration-Kubernetes-326CE5?style=for-the-badge&logo=kubernetes" />
   <img src="https://img.shields.io/badge/IaC-Terraform-purple?style=for-the-badge&logo=terraform" />
-  <img src="https://img.shields.io/badge/IaC-Pulumi-ED8B00?style=for-the-badge&logo=pulumi" />
   <img src="https://img.shields.io/badge/CI/CD-GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions" />
   <img src="https://img.shields.io/badge/Delivery-ArgoCD-1E6CFF?style=for-the-badge&logo=argo" />
 </p>
@@ -248,7 +246,7 @@
 ├── dashboard/           # React frontend for admin UI
 ├── chatbot/             # Dialogflow + GPT fallback
 ├── finance-assistant/   # GPT-based finance advisor
-├── stream/              # Kafka Streams + Flink jobs
+├── stream/              # Kafka Streams
 ├── warehouse/           # Snowflake integration setup
 ├── infra/               # Docker, K8s, Istio, Terraform, Vault
 ├── monitoring/          # Prometheus, Grafana, Jaeger, ELK
@@ -290,7 +288,7 @@
     Implements **OAuth2**, **Vault**, **TLS/mTLS**, and **Keycloak** with **Istio** service mesh for end-to-end secure architecture.
 
 11. **Monitoring & Observability**  
-    Tracks metrics, logs, and traces via **Prometheus**, **Grafana**, **Jaeger**, **OpenTelemetry**, and the **ELK Stack**.
+    Tracks metrics, logs, and traces via **Prometheus**, **Grafana**, **Jaeger**, and the **ELK Stack**.
 
 12. **CI/CD Pipeline**  
     Uses **GitHub Actions** for build/test and **ArgoCD** for GitOps-based deployment to Kubernetes clusters.
